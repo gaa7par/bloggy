@@ -1,0 +1,14 @@
+<h1>bloggy</h1>
+
+<%= @articles.each do |article| %>
+  <div>
+    <ul>
+      <li><strong><%= article.title %></strong></li>
+      <li><%= article.text %></li>
+    </ul>
+  </div>
+<% end %>
+
+<p>
+  <%= link_to 'New article', new_article_path %>
+</p>
